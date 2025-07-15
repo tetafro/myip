@@ -55,7 +55,7 @@ func main() {
 	if err := srv.Shutdown(ctx); err != nil {
 		log.Printf("HTTP server shutdown error: %v", err)
 	}
-	fmt.Println("Shutdown gracefully")
+	log.Print("Shutdown gracefully")
 }
 
 func handle(w http.ResponseWriter, r *http.Request) {
