@@ -44,7 +44,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
       - name: Install ansible
-        run: sudo apt install -y ansible
+        run: sudo apt install -qq -y ansible
       - name: Setup ssh
         run: |
           mkdir -p ~/.ssh
